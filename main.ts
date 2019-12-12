@@ -1,3 +1,6 @@
+sprites.onDestroyed(SpriteKind.Player, function (sprite) {
+	
+})
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
     Cherrybombcake.destroy()
     game.over(false, effects.splatter)
@@ -68,10 +71,9 @@ f b b f f f e e e e f f f b b f
 . . . f f 1 d 1 d 1 d f f . . . 
 . . . . . f f b b f f . . . . . 
 `, SpriteKind.Food)
-let MessageDad = "Where is dad"
+let MessageDad = "hi"
 Cherrybombcake.say(MessageDad)
 scene.setBackgroundColor(6)
-game.onUpdateInterval(5000, function () {
-    Ball.y += controller.dx()
-    Ball.x += controller.dy()
+game.onUpdate(function () {
+    Ball.follow(Cherrybombcake, 50)
 })

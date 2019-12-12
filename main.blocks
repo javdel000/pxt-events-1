@@ -1,4 +1,28 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id=";r*hT1J3~nvx{ul~Cc4f">Player</variable><variable type="KIND_SpriteKind" id="aHq|mKX8dImR}J{vG*sG">Projectile</variable><variable type="KIND_SpriteKind" id="Qn(*s}/:L@RM5mt(NSvb">Food</variable><variable type="KIND_SpriteKind" id=".28M{iXQ?]B]z*1Ff@j/">Enemy</variable><variable id="*Y9{DSffF1agyTKKxX{+">Cherrybombcake</variable><variable id="mDU5twKF%jC1b7#=TK?X">mySprite</variable><variable id="Hsa~Fs6xiWC`kf|Xw$$1">MessageDad</variable><variable id="s+M64IHpPTm!*CC7vZf4">Mom</variable><variable id="@~.OX|9d?75BF@PN$e%2">Ball</variable></variables><block type="pxt-on-start" id="S.HKr#))}]Q}YaoE^*^C" x="138" y="109"><statement name="HANDLER"><block type="variables_set" id="kMtI[l6.-lE4Q*[+.UZ("><field name="VAR" id="@~.OX|9d?75BF@PN$e%2">Ball</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="dTI@W(/xWM_UKFnIM)SY"><value name="img"><shadow type="screen_image_picker" id="sbtmubZN3[#M[yJd$B,I"><field name="img">img`
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="aHF?;n.yHy_[=5s_@)VE">Cherrybombcake</variable>
+    <variable type="" id="D34=n[!.8x]lJbgo8[+v">Ball</variable>
+    <variable type="" id="TT:FJU$U`/K|z.hWPemZ">Mom</variable>
+    <variable type="" id="L;zN~r31qe)200uZoDrX">MessageDad</variable>
+    <variable type="" id="@0@Z.2~)]X+[RZYls/Yp">myEnemy</variable>
+    <variable type="" id="}}=Uo~]1F[|*xa=L[NRQ">mySprite</variable>
+    <variable type="KIND_SpriteKind" id="4RhA;k.IYzW?:wmP)7Wv">Player</variable>
+    <variable type="KIND_SpriteKind" id="BYlr!h9_3Fo0okArVXEZ">Projectile</variable>
+    <variable type="KIND_SpriteKind" id="9N#vtYm[V8lV$G_*C1hc">Food</variable>
+    <variable type="KIND_SpriteKind" id="OT,,jHFGr}EhbhV#Y*o^">Enemy</variable>
+  </variables>
+  <block type="pxt-on-start" x="20" y="20">
+    <statement name="HANDLER">
+      <block type="variables_set">
+        <field name="VAR" id="D34=n[!.8x]lJbgo8[+v" variabletype="">Ball</field>
+        <value name="VALUE">
+          <shadow type="math_number">
+            <field name="NUM">0</field>
+          </shadow>
+          <block type="spritescreate">
+            <value name="img">
+              <shadow type="screen_image_picker">
+                <field name="img">img`
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 . . . . . 3 3 3 3 3 . . . . . . 
@@ -15,7 +39,28 @@
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
-`</field></shadow></value><value name="kind"><shadow type="spritekind" id="AZ~-hk^Ew:BiUSI^x^~u"><field name="MEMBER">Enemy</field></shadow></value></block></value><next><block type="variables_set" id="v)dAv,%IqP^gms1E;=G,"><field name="VAR" id="*Y9{DSffF1agyTKKxX{+">Cherrybombcake</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="07gp[mp}X:Z)Nub2.h+["><value name="img"><shadow type="screen_image_picker" id="4*3f,|?Vn]8aF.]j?q9B"><field name="img">img`
+`
+                </field>
+              </shadow>
+            </value>
+            <value name="kind">
+              <shadow type="spritekind">
+                <field name="MEMBER">Enemy</field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="variables_set">
+            <field name="VAR" id="aHF?;n.yHy_[=5s_@)VE" variabletype="">Cherrybombcake</field>
+            <value name="VALUE">
+              <shadow type="math_number">
+                <field name="NUM">0</field>
+              </shadow>
+              <block type="spritescreate">
+                <value name="img">
+                  <shadow type="screen_image_picker">
+                    <field name="img">img`
 . . . . . . . . . . . . . . . . . . . . . . . . 
 . . . . . f f f f . . . . . . . . . . . . . . . 
 . . . f f f 5 5 f f f . . . . . . . . . . . . . 
@@ -40,7 +85,70 @@ f b b b b f 5 5 5 5 f d 2 . . . . . . . . . . .
 . . . . . . . . . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . . . . . . . . . 
-`</field></shadow></value><value name="kind"><shadow type="spritekind" id="x3Gyd1vE9*|3AGM;!.Eq"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="spritesetpos" id="J6d(u+nB#ef/:nm?_}p~"><value name="sprite"><block type="variables_get" id="(Qd.}N;di}I!F-.Ykr$7"><field name="VAR" id="*Y9{DSffF1agyTKKxX{+">Cherrybombcake</field></block></value><value name="x"><shadow type="positionPicker" id="/2;t=P}PorL%OX]]%$!1"><field name="index">88</field></shadow></value><value name="y"><shadow type="positionPicker" id="Frsa|QyNjQMrB*WCw$p)"><field name="index">88</field></shadow></value><next><block type="spritesetpos" id="R(Jd~p{ODLdGH9x*m6;E"><value name="sprite"><block type="variables_get" id="T(#4*+G[ytSu|Cdpp?n0"><field name="VAR" id="@~.OX|9d?75BF@PN$e%2">Ball</field></block></value><value name="x"><shadow type="positionPicker" id="N8+B;VK7WNucjuN@K^B7"><field name="index">11</field></shadow></value><value name="y"><shadow type="positionPicker" id="350npFcdPT[rv.xH0q:+"><field name="index">28</field></shadow></value><next><block type="game_control_sprite" id="XWDvMy$Y)jHO-^fHr.$^"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get" id="wCvrqV!eA{oVn/t3O^5l"><field name="VAR" id="*Y9{DSffF1agyTKKxX{+">Cherrybombcake</field></block></value><next><block type="variables_set" id="G~!AZC[}YyZ.ZLh*^$RQ"><field name="VAR" id="s+M64IHpPTm!*CC7vZf4">Mom</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="i`)jvpb!dwsYc]SX0[sV"><value name="img"><shadow type="screen_image_picker" id="L$|Y@{p1UZjV=M[.nSH/"><field name="img">img`
+`
+                    </field>
+                  </shadow>
+                </value>
+                <value name="kind">
+                  <shadow type="spritekind">
+                    <field name="MEMBER">Player</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="spritesetpos">
+                <value name="sprite">
+                  <block type="variables_get">
+                    <field name="VAR" id="aHF?;n.yHy_[=5s_@)VE" variabletype="">Cherrybombcake</field>
+                  </block>
+                </value>
+                <value name="x">
+                  <shadow type="positionPicker">
+                    <field name="index">88</field>
+                  </shadow>
+                </value>
+                <value name="y">
+                  <shadow type="positionPicker">
+                    <field name="index">88</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="spritesetpos">
+                    <value name="sprite">
+                      <block type="variables_get">
+                        <field name="VAR" id="D34=n[!.8x]lJbgo8[+v" variabletype="">Ball</field>
+                      </block>
+                    </value>
+                    <value name="x">
+                      <shadow type="positionPicker">
+                        <field name="index">11</field>
+                      </shadow>
+                    </value>
+                    <value name="y">
+                      <shadow type="positionPicker">
+                        <field name="index">28</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="game_control_sprite">
+                        <mutation _expanded="0" _input_init="false"></mutation>
+                        <value name="sprite">
+                          <shadow type="variables_get">
+                            <field name="VAR" id="aHF?;n.yHy_[=5s_@)VE" variabletype="">Cherrybombcake</field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="variables_set">
+                            <field name="VAR" id="TT:FJU$U`/K|z.hWPemZ" variabletype="">Mom</field>
+                            <value name="VALUE">
+                              <shadow type="math_number">
+                                <field name="NUM">0</field>
+                              </shadow>
+                              <block type="spritescreate">
+                                <value name="img">
+                                  <shadow type="screen_image_picker">
+                                    <field name="img">img`
 . . . . . f f 2 2 f f . . . . . 
 . . . . f 5 2 5 5 2 5 f . . . . 
 . . . f e 2 5 5 5 5 2 e f . . . 
@@ -57,4 +165,145 @@ f b b f f f e e e e f f f b b f
 . . e f b d b d b d b b f e . . 
 . . . f f 1 d 1 d 1 d f f . . . 
 . . . . . f f b b f f . . . . . 
-`</field></shadow></value><value name="kind"><shadow type="spritekind" id="Cl{RCGzg^SSV29mbb%c)"><field name="MEMBER">Food</field></shadow></value></block></value><next><block type="variables_set" id="eeo$3;-KMu82*Gkdwn1v"><field name="VAR" id="Hsa~Fs6xiWC`kf|Xw$$1">MessageDad</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="text" id="FR0gn;UpyJ+|Gwlp2/Jg"><field name="TEXT">Where is dad</field></block></value><next><block type="spritesay" id="tNSFVV`d(o[3GX|^Q%##"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="sprite"><block type="variables_get" id="2)mjeT4-$ioC2rgfVHzA"><field name="VAR" id="*Y9{DSffF1agyTKKxX{+">Cherrybombcake</field></block></value><value name="text"><shadow type="text" id="7z?|fZ6aNu:mL$E?,oK/"><field name="TEXT">:)</field></shadow><block type="variables_get" id="dW1UeAD[yC!CE({sJ;.j"><field name="VAR" id="Hsa~Fs6xiWC`kf|Xw$$1">MessageDad</field></block></value><value name="millis"><shadow type="timePicker" id="}*D8~wH%!QX:vxLo/zH+"><field name="ms">500</field></shadow></value><next><block type="gamesetbackgroundcolor" id="v!pa~*YXo5g`4zVCN=-C"><value name="color"><shadow type="colorindexpicker" id="C;T:xu8R99+`w8FMO{8t"><field name="index">6</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block><block type="gameinterval" id="4N~buDxV49[g,yY(qXc)" x="750" y="90"><value name="period"><shadow type="timePicker" id="l=*em?jtBMjwg~/K|S+6"><field name="ms">5000</field></shadow></value><statement name="HANDLER"><block type="Sprite_blockCombine_change" id="W2wScVA|iPjEae12uRl^"><field name="property">Sprite.y@set</field><value name="mySprite"><block type="variables_get" id="!b$jk2Bm[-B+63S8pRjp"><field name="VAR" id="@~.OX|9d?75BF@PN$e%2">Ball</field></block></value><value name="value"><shadow type="math_number" id="`%QSq8{#U}s9YD:4C=)}"><field name="NUM">0</field></shadow><block type="keydx" id="-8oAX16jK;jKMQV,nvC:"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="step"><shadow type="math_number" id="NIhW4*Qg];_B$xeUgxh#"><field name="NUM">100</field></shadow></value></block></value><next><block type="Sprite_blockCombine_change" id="s~|b9cx.vDMcFs77DnnJ"><field name="property">Sprite.x@set</field><value name="mySprite"><block type="variables_get" id="dBW~abK;*7jUXgd?1G7:"><field name="VAR" id="@~.OX|9d?75BF@PN$e%2">Ball</field></block></value><value name="value"><shadow type="math_number" id="pu[-sxWHEjru;;U}LJ_V"><field name="NUM">0</field></shadow><block type="keydy" id=";I@RA%4U.zJ(:O%!4ppx"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation></block></value></block></next></block></statement></block><block type="spritesoverlap" id="?h@ty1~A|w;Cc7SPenrY" x="650" y="330"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom" id="6wghtl6]JB_G-MXD/dZ3"><mutation typename="Sprite"/><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind" id="uUqP8;;M+)Z,d2hWt5jj"><field name="MEMBER">Player</field></shadow></value><value name="HANDLER_DRAG_PARAM_otherSprite"><shadow type="argument_reporter_custom" id="Tz(~anSCNwlRZ15Lt)xA"><mutation typename="Sprite"/><field name="VALUE">otherSprite</field></shadow></value><value name="otherKind"><shadow type="spritekind" id="qd}y,;q`^-C2zQ}{K8$6"><field name="MEMBER">Enemy</field></shadow></value><statement name="HANDLER"><block type="spritedestroy" id="z)Lx._FqO]%+/6SSevFr"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get" id="F1vzr~vljb58~z}*9Jyr"><field name="VAR" id="*Y9{DSffF1agyTKKxX{+">Cherrybombcake</field></block></value><next><block type="gameOver" id="V1lAAq6HU6S9K$d]}G1w"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="1" _input_init="true"></mutation><field name="effect">effects.splatter</field><value name="win"><shadow type="toggleWinLose" id="=G.!V(e0i)m(brMC6sRV"><field name="win">false</field></shadow></value></block></next></block></statement></block></xml>
+`
+                                    </field>
+                                  </shadow>
+                                </value>
+                                <value name="kind">
+                                  <shadow type="spritekind">
+                                    <field name="MEMBER">Food</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="variables_set">
+                                <field name="VAR" id="L;zN~r31qe)200uZoDrX" variabletype="">MessageDad</field>
+                                <value name="VALUE">
+                                  <shadow type="math_number">
+                                    <field name="NUM">0</field>
+                                  </shadow>
+                                  <block type="text">
+                                    <field name="TEXT">hi</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="spritesay">
+                                    <mutation _expanded="0" _input_init="false"></mutation>
+                                    <value name="sprite">
+                                      <block type="variables_get">
+                                        <field name="VAR" id="aHF?;n.yHy_[=5s_@)VE" variabletype="">Cherrybombcake</field>
+                                      </block>
+                                    </value>
+                                    <value name="text">
+                                      <block type="variables_get">
+                                        <field name="VAR" id="L;zN~r31qe)200uZoDrX" variabletype="">MessageDad</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="gamesetbackgroundcolor">
+                                        <value name="color">
+                                          <shadow type="colorindexpicker">
+                                            <field name="index">6</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="spritesondestroyed" x="659" y="20">
+    <value name="HANDLER_DRAG_PARAM_sprite">
+      <shadow type="argument_reporter_custom">
+        <mutation typename="Sprite"></mutation>
+        <field name="VALUE">sprite</field>
+      </shadow>
+    </value>
+    <value name="kind">
+      <shadow type="spritekind">
+        <field name="MEMBER">Player</field>
+      </shadow>
+    </value>
+  </block>
+  <block type="spritesoverlap" x="1083" y="20">
+    <value name="HANDLER_DRAG_PARAM_sprite">
+      <shadow type="argument_reporter_custom">
+        <mutation typename="Sprite"></mutation>
+        <field name="VALUE">sprite</field>
+      </shadow>
+    </value>
+    <value name="kind">
+      <shadow type="spritekind">
+        <field name="MEMBER">Player</field>
+      </shadow>
+    </value>
+    <value name="HANDLER_DRAG_PARAM_otherSprite">
+      <shadow type="argument_reporter_custom">
+        <mutation typename="Sprite"></mutation>
+        <field name="VALUE">otherSprite</field>
+      </shadow>
+    </value>
+    <value name="otherKind">
+      <shadow type="spritekind">
+        <field name="MEMBER">Enemy</field>
+      </shadow>
+    </value>
+    <statement name="HANDLER">
+      <block type="spritedestroy">
+        <mutation _expanded="0" _input_init="false"></mutation>
+        <value name="sprite">
+          <block type="variables_get">
+            <field name="VAR" id="aHF?;n.yHy_[=5s_@)VE" variabletype="">Cherrybombcake</field>
+          </block>
+        </value>
+        <next>
+          <block type="gameOver">
+            <mutation _expanded="1" _input_init="true"></mutation>
+            <field name="effect">effects.splatter</field>
+            <value name="win">
+              <shadow type="toggleWinLose">
+                <field name="win">false</field>
+              </shadow>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="gameupdate" x="20" y="631">
+    <statement name="HANDLER">
+      <block type="spriteFollowOtherSprite">
+        <mutation _expanded="1" _input_init="true"></mutation>
+        <value name="sprite">
+          <block type="variables_get">
+            <field name="VAR" id="D34=n[!.8x]lJbgo8[+v" variabletype="">Ball</field>
+          </block>
+        </value>
+        <value name="target">
+          <block type="variables_get">
+            <field name="VAR" id="aHF?;n.yHy_[=5s_@)VE" variabletype="">Cherrybombcake</field>
+          </block>
+        </value>
+        <value name="speed">
+          <shadow type="math_number">
+            <field name="NUM">50</field>
+          </shadow>
+        </value>
+      </block>
+    </statement>
+  </block>
+</xml>
